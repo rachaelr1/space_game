@@ -1,21 +1,58 @@
 
 //furby varibale
-let furby
+//let furby
+
+//flower variable
+let flower
+
+//bee variable
+let bee
+
+//sun variable
+let sun
 
 function preload(){
-  furby = loadImage('images/furby.png')
+  //furby = loadImage('images/furby.png')
+  bee = loadImage('images/bee.png')
+  flower = loadImage('images/flower.png')
+  sun = loadImage('images/sun.png')
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  imageMode(CENTER)
+  background(206, 190, 220)
 }
 
 function draw() {
 
-  image(furby, windowWidth/2, windowHeight/2, 100,100)
-  
+  //image(furby, windowWidth/2, windowHeight/2, 200,200)
+
+//flowers
+  image(flower, 100, 700, 200,200)
+  image(flower, 200, 700, 200,200)
+  image(flower, 300, 700, 200,200)
+  image(flower, 400, 700, 200,200)
+  image(flower, 500, 700, 200,200)
+  image(flower, 600, 700, 200,200)
+  image(flower, 700, 700, 200,200)
+  image(flower, 800, 700, 200,200)
+  image(flower, 900, 700, 200,200)
+  image(flower, 1000 , 700, 200,200)
+  image(flower, 1100 , 700, 200,200)
+  image(flower, 1200 , 700, 200,200)
+  image(flower, 1300 , 700, 200,200)
+  image(flower, 1400 , 700, 200,200)
+  image(flower, 1500 , 700, 200,200)
+
+//bee
+  image(bee,900, 500, 100,100)
+
+//sun
+  image(sun,1300, 110, 200,200)
+
   print(mouseX)
-  background(206, 190, 220);
+  //background(206, 190, 220);
   //background(random(23), random(23), random(200))
   stroke(219, 68, 207)
   strokeWeight(5)
